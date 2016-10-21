@@ -95,5 +95,13 @@ section {
 	background-color: white;
 }
 
+form {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translateY(-75%);
+	transform: translateX(-50%);
+}
+
 
 
