@@ -75,6 +75,14 @@ section {
 	cursor: pointer;
 }
 
+#headline {
+	position: absolute;
+	top: 48.5%;
+	left: 50%;
+	transform: translateY(-48.5%);
+	transform: translateX(-50%);
+}
+
 #btn-prev {
 	left: 10px;
 }
