@@ -1,0 +1,36 @@
+{
+	"places": [
+        {
+        	"id": 1,
+        	"name": "HNK Flexplek",
+        	"imgage_urls": "https://d2h37djvgj7smg.cloudfront.net/0b4a33ef924631441bc371646c6c3830592c746d/18995.600x400x16919.jpg",
+            "location_name": "HNK Amsterdam Houthavens",
+            "day_price": 175,
+            "review_count": 11
+        },
+        {
+        	"id": 2,
+        	"name": "Harrods",
+        	"imgage_urls": "https://d2h37djvgj7smg.cloudfront.net/4efa8f4624286e1890bdcfc82e9dfb06ccfb77ad/9492.600x400x16919.jpg",
+            "location_name": "Het Warenhuis",
+            "day_price": 200,
+            "review_count": 4
+        },
+        {
+        	"id": 3,
+        	"name": "V2",
+        	"imgage_urls": "https://d2h37djvgj7smg.cloudfront.net/cd6dfff88114b71ada941ff4e004b0cf143fdb3e/18996.600x400x16919.jpg",
+            "location_name": "HNK Amsterdam Houthavens",
+            "day_price": 260,
+            "review_count": 13
+        },
+        {
+        	"id": 4,
+        	"name": "LaFayette",
+        	"imgage_urls": "https://d2h37djvgj7smg.cloudfront.net/6f5a44425fd3892f70755fed536885e0476fc6b8/2328.600x400x16919.jpg",
+            "location_name": "Het Warenhuis",
+            "day_price": 150,
+            "review_count": 0
+        }
+	]
+}
