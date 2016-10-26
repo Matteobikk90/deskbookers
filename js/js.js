@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+// Variables
+
 var slider = $('#slider');
 var next = $('#btn-next');
 var prev = $('#btn-prev');
@@ -7,6 +9,8 @@ var prev = $('#btn-prev');
 $('#slider section:last').insertBefore('#slider section:first');
 
 slider.css('margin-left', '-'+100+'%');
+
+// Slide Right
 
 function moveRight() {
 	slider.animate({
@@ -16,6 +20,8 @@ function moveRight() {
         slider.css('margin-left', '-'+100+'%');
 		});
 }
+
+// Slide Left
 
 function moveLeft() {
 	slider.animate({
@@ -37,10 +43,15 @@ next.on('click', function(){
 	moveRight();
 });
 
+// Autoplay
+
+function autoplay() {
+	interval = setInterval(function(){
+		moveRight();
+	}, 3000);
+}
+
+autoplay();
+
 
 });
-
-
-
-
-
