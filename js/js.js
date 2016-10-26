@@ -53,5 +53,23 @@ function autoplay() {
 
 autoplay();
 
+// Get JSON
+
+$.getJSON("../places.json", function(data) {
+    console.log(data);
+    });
+
+$.ajax({
+    url: "../places.json",
+    dataType: "json",
+    type: "get",
+    cache: false,
+    success: function(data) {
+        console.log(data);
+            $(data.places).each(function(index, value){
+            	console.log(value);
+            });
+        }
+    });
 
 });
