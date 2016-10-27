@@ -67,13 +67,13 @@ $.ajax({
         success: function(data) {
             console.log(data);
         $(data.places).each(function(index, value) {
-        $("#results").append("<div id='place"+"' class='place'>"+
+        $("#results").append("<div id='place"+"' class='place'>"
 
-+"<span>"+value.name+"</span>"
-+"<span>"+value.location_name+"</span>"
-+"<img alt='"+value.location_name+"' title='"+value.location_name+"' src='"+value.imgage_urls+"'></img>"
-+"<span>Day Price: "+value.day_price+"</span><br>"
-+"<span>Review count: "+value.review_count+"</span>"
++"<p>"+value.name+"</p>"
++"<p>"+value.location_name+"</p>"
++"<img alt='"+value.location_name+"' title='"+value.location_name+"' src='"+value.imgage_urls+"'></img><br><br>"
++"<p>Day Price: "+value.day_price+"</p>"
++"<p>Review count: "+value.review_count+"</p>"
 +"</div>");
 
         });
