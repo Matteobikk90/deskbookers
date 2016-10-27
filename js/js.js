@@ -59,6 +59,11 @@ $.getJSON("../places.json", function(data) {
     console.log(data);
     });
 
+// and POST them
+
+$("#find_place").submit(function(){
+var inp = $("[name=search]").val();
+
 $.ajax({
         url: "../places.json",
         dataType: "json",
@@ -66,7 +71,13 @@ $.ajax({
         cache: false,
         success: function(data) {
             console.log(data);
+
+// LOOP trough them
+
         $(data.places).each(function(index, value) {
+
+// APPEND
+
         $("#results").append("<div id='place"+"' class='place'>"
 
 +"<p>"+value.name+"</p>"
