@@ -48,10 +48,10 @@ next.on('click', function(){
 function autoplay() {
 	interval = setInterval(function(){
 		moveRight();
-	}, 3000);
+	}, 4000);
 }
 
-// autoplay();
+autoplay();
 
 // Get JSON
 
