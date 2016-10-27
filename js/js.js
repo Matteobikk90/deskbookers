@@ -51,7 +51,7 @@ function autoplay() {
 	}, 3000);
 }
 
-autoplay();
+// autoplay();
 
 // Get JSON
 
@@ -60,16 +60,25 @@ $.getJSON("../places.json", function(data) {
     });
 
 $.ajax({
-    url: "../places.json",
-    dataType: "json",
-    type: "get",
-    cache: false,
-    success: function(data) {
-        console.log(data);
-            $(data.places).each(function(index, value){
-            	console.log(value);
-            });
-        }
-    });
+        url: "../places.json",
+        dataType: "json",
+        type: "get",
+        cache: false,
+        success: function(data) {
+            console.log(data);
+        $(data.places).each(function(index, value) {
+        $("#results").append("<div id='place"+"' class='place'>"+
+
++"<span>"+value.name+"</span>"
++"<span>"+value.location_name+"</span>"
++"<img alt='"+value.location_name+"' title='"+value.location_name+"' src='"+value.imgage_urls+"'></img>"
++"<span>Day Price: "+value.day_price+"</span><br>"
++"<span>Review count: "+value.review_count+"</span>"
++"</div>");
+
+        });
+    }
+})
+
 
 });
